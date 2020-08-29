@@ -12,6 +12,7 @@ const HookForm = () => {
           type="text"
           value={name.firstName}
           placeholder="first name"
+          // spread operator is used for merging the state
           onChange={(e) => setname({ ...name, firstName: e.target.value })}
         />
         <input
