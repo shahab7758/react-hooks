@@ -5,7 +5,7 @@ const HookCounteruseEffect = () => {
   useEffect(() => {
     console.log("rendered");
     document.title = `Clicked ${count} times`;
-  }, [count]); // It will only runs when count will change, this is used to prevent extra rendering
+  }, []); // It will only runs when count will change, this is used to prevent extra rendering
   return (
     <div>
       <input
